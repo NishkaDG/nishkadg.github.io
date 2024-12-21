@@ -134,7 +134,7 @@ layout: default
   </div>
 
 	<div id="papers-noscript">
-    <h2 class="my-mini-heading">{{ Papers }}</h2>
+    <h2 class="my-mini-heading">{{ site.publications_btn }}</h2>
     <ul>
       {% for paper in site.data.papers %}
       <li>
@@ -150,7 +150,7 @@ layout: default
 
 	
   <div id="cv-noscript">
-    <h2 class="my-mini-heading">CV</h2>
+    <h2 class="my-mini-heading">{{ site.cv_btn }}</h2>
 	<span class="my-mini-heading-sub">Work Experience</span>
 	<ul>
 	  {% for work in site.data.work %}
