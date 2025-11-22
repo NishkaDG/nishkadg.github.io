@@ -31,7 +31,7 @@ var show_posts = function() {
     $('fiction-btn').removeClass('disabled');
 	$('#fiction').fadeOut(300);
     $('#projects-btn').removeClass('disabled');
-    $('#projects').fadeOut(function() {
+    $('#projects').fadeOut(300, function() {
         $('#posts').fadeIn(300)
     });
     $('#posts-btn').addClass('disabled')
@@ -44,7 +44,7 @@ var show_cv = function() {
     $('fiction-btn').removeClass('disabled');
 	$('#fiction').fadeOut(300);
 	$('#projects-btn').removeClass('disabled');
-    $('#projects').fadeOut(function() {
+    $('#projects').fadeOut(300, function() {
         $('#cv').fadeIn(300)
     });
     $('#cv-btn').addClass('disabled')
@@ -57,7 +57,7 @@ var show_papers = function() {
     $('fiction-btn').removeClass('disabled');
 	$('#fiction').fadeOut(300);
 	$('#projects-btn').removeClass('disabled');
-    $('#projects').fadeOut(function() {
+    $('#projects').fadeOut(300, function() {
         $('#papers').fadeIn(300)
     });
     $('#papers-btn').addClass('disabled')
@@ -70,7 +70,7 @@ var show_fiction = function() {
 	$('#projects-btn').removeClass('disabled');
     $('#projects').fadeOut(300);
     $('#papers-btn').removeClass('disabled');
-    $('#papers').fadeOut(function() {
+    $('#papers').fadeOut(300, function() {
         $('#fiction').fadeIn(300)
     });
     $('#fiction-btn').addClass('disabled')
