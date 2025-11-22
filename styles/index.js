@@ -52,4 +52,15 @@ var show_papers = function() {
     });
     $('#papers-btn').addClass('disabled')
 };
+var show_fiction = function() {
+    $('#posts-btn').removeClass('disabled');
+    $('#posts').fadeOut(300);
+	$('#cv-btn').removeClass('disabled');
+	$('#cv').fadeOut(300);
+	$('#projects-btn').removeClass('disabled');
+    $('#projects').fadeOut(function() {
+        $('#fiction').fadeIn(300)
+    });
+    $('#fiction-btn').addClass('disabled')
+};
 	
