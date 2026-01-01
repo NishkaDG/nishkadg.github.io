@@ -10,17 +10,19 @@ var show_posts = function() {
 	$('#papers-btn').removeClass('disabled');
 	$('#papers').fadeOut(300);
     $('#stories-btn').removeClass('disabled');
-	$('#stories').fadeOut(300);
-    $('#posts').fadeIn(300)
+    $('#stories').fadeOut(300, function() {    
+        $('#posts').fadeIn(300)
+    });
     $('#posts-btn').addClass('disabled')
 };
 
 var show_papers = function() {
-    $('#posts-btn').removeClass('disabled');
-    $('#posts').fadeOut(300);
     $('#stories-btn').removeClass('disabled');
 	$('#stories').fadeOut(300);
-    $('#papers').fadeIn(300);
+    $('#posts-btn').removeClass('disabled');
+    $('#posts').fadeOut(300, function() {
+        $('#papers').fadeIn(300);
+    });
     $('#papers-btn').addClass('disabled')
 };
 var show_stories = function() {
