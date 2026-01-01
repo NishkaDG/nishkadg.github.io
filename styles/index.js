@@ -1,22 +1,18 @@
 var hide_lists = function(cb) {
     $('#posts').fadeOut(300);
-    $('#projects').fadeOut(300);
-	$('#cv').fadeOut(300);
 	$('#papers').fadeOut(300);
-    $('#fiction').fadeOut(300);
+    $('#stories').fadeOut(300);
     $('#posts-btn').removeClass('disabled');
-    $('#projects-btn').removeClass('disabled');
-	$('#cv-btn').removeClass('disabled');
 	$('#papers-btn').removeClass('disabled');
-    $('fiction-btn').removeClass('disabled');
+    $('#stories-btn').removeClass('disabled');
 };
 var show_projects = function() {
 	$('#cv-btn').removeClass('disabled');
 	$('#cv').fadeOut(300);
-	$('papers-btn').removeClass('disabled');
+	$('#papers-btn').removeClass('disabled');
 	$('#papers').fadeOut(300);
-    $('fiction-btn').removeClass('disabled');
-	$('#fiction').fadeOut(300);
+    $('#stories-btn').removeClass('disabled');
+	$('#stories').fadeOut(300);
     $('#posts-btn').removeClass('disabled');
     $('#posts').fadeOut(300, function() {
         $('#projects').fadeIn(300)
@@ -26,10 +22,10 @@ var show_projects = function() {
 var show_posts = function() {
 	$('#cv-btn').removeClass('disabled');
 	$('#cv').fadeOut(300);
-	$('papers-btn').removeClass('disabled');
+	$('#papers-btn').removeClass('disabled');
 	$('#papers').fadeOut(300);
-    $('fiction-btn').removeClass('disabled');
-	$('#fiction').fadeOut(300);
+    $('#stories-btn').removeClass('disabled');
+	$('#stories').fadeOut(300);
     $('#projects-btn').removeClass('disabled');
     $('#projects').fadeOut(300, function() {
         $('#posts').fadeIn(300)
@@ -39,10 +35,10 @@ var show_posts = function() {
 var show_cv = function() {
     $('#posts-btn').removeClass('disabled');
     $('#posts').fadeOut(300);
-	$('papers-btn').removeClass('disabled');
+	$('#papers-btn').removeClass('disabled');
 	$('#papers').fadeOut(300);
-    $('fiction-btn').removeClass('disabled');
-	$('#fiction').fadeOut(300);
+    $('#stories-btn').removeClass('disabled');
+	$('#stories').fadeOut(300);
 	$('#projects-btn').removeClass('disabled');
     $('#projects').fadeOut(300, function() {
         $('#cv').fadeIn(300)
@@ -54,15 +50,15 @@ var show_papers = function() {
     $('#posts').fadeOut(300);
 	$('#cv-btn').removeClass('disabled');
 	$('#cv').fadeOut(300);
-    $('fiction-btn').removeClass('disabled');
-	$('#fiction').fadeOut(300);
+    $('#stories-btn').removeClass('disabled');
+	$('#stories').fadeOut(300);
 	$('#projects-btn').removeClass('disabled');
     $('#projects').fadeOut(300, function() {
         $('#papers').fadeIn(300)
     });
     $('#papers-btn').addClass('disabled')
 };
-var show_fiction = function() {
+var show_stories = function() {
     $('#posts-btn').removeClass('disabled');
     $('#posts').fadeOut(300);
 	$('#cv-btn').removeClass('disabled');
@@ -71,8 +67,8 @@ var show_fiction = function() {
     $('#projects').fadeOut(300);
     $('#papers-btn').removeClass('disabled');
     $('#papers').fadeOut(300, function() {
-        $('#fiction').fadeIn(300)
+        $('#stories').fadeIn(300)
     });
-    $('#fiction-btn').addClass('disabled')
+    $('#stories-btn').addClass('disabled')
 };
 	
