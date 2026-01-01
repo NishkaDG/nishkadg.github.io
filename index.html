@@ -6,8 +6,6 @@ layout: default
   <a id="cv-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_cv();">{{ site.cv_btn }}</a>
   <a id="posts-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_posts();">{{ site.posts_btn }}</a>
   <a id="projects-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_projects();">{{ site.projects_btn }}</a>
-  <a id="papers-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_papers();">{{ site.research_btn }}</a>
-  <a id="fiction-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_fiction();">{{ site.fiction_btn }}</a>
 </div>
 <div id="posts">
 
@@ -74,38 +72,6 @@ layout: default
       </li>
       {% endfor %}
     </ul>
-    <div>
-    <a onclick="hide_lists();" class="waves-effect waves-teal btn-flat btn-large">{{ site.close_btn }}</a>
-  </div>
-
-</div>
-
-<div id="papers">
-  <h2 class="my-mini-heading">{{ site.research_btn }}</h2>
-  	<ul>
-	  {% for paper in site.data.papers %}
-	  <li>
-	    <p class="my-item">{{paper.name}} , {{paper.conf}} , <a href="{{ paper.link }}" class="my-link">ePrint</a><br>
-		</p>
-	  </li>
-	  {% endfor %}
-	</ul>
-    <div>
-    <a onclick="hide_lists();" class="waves-effect waves-teal btn-flat btn-large">{{ site.close_btn }}</a>
-  </div>
-
-</div>
-
-<div id="fiction">
-  <h2 class="my-mini-heading">{{ site.fiction_btn }}</h2>
-  	<ul>
-	  {% for story in site.data.fiction %}
-	  <li>
-	    <p class="my-item">{{story.name}} , {{story.pub}} , {{story.year}}, <a href="{{ story.link }}" class="my-link">Read Here</a><br>
-		</p>
-	  </li>
-	  {% endfor %}
-	</ul>
     <div>
     <a onclick="hide_lists();" class="waves-effect waves-teal btn-flat btn-large">{{ site.close_btn }}</a>
   </div>
